@@ -74,7 +74,7 @@
         "activityType": "SIMPLE",
         "name": "Lookup",
         "description": "",
-        "lookupTable": "lt:{\"id\":\"PkotzRbAkPhOZFAHjtqiO\",\"name\":\"Lookupabc\"}",
+        "lookupTable": "lt:{\"id\" : \"wqkeQYegiUWIPtrdpAAWH\", \"name\" : \"Lookupabc\"}",
         "workflowLoader": "wf:{\"id\":\"\",\"name\":\"\"}",
         "config.name": "Lookup",
         "sourceSchemas": [
@@ -167,20 +167,18 @@
   },
   "__tableMetadata": [
     {
-      "id": "PkotzRbAkPhOZFAHjtqiO",
+      "id": "wqkeQYegiUWIPtrdpAAWH",
       "name": "Lookupabc",
       "type": "lookup",
       "metadata": {
+        "id": "wqkeQYegiUWIPtrdpAAWH",
         "name": "Lookupabc",
-        "id": "PkotzRbAkPhOZFAHjtqiO",
         "description": "",
-        "createdAt": "2025-11-17T04:00:22.792Z",
-        "updatedAt": "2025-11-17T04:00:23.292668988Z",
         "itemType": "lookup-table",
-        "ttl": 0,
+        "createdAt": "2025-11-18T07:03:36.104Z",
         "columns": [
           {
-            "id": "sJECBgNeXkqTxxfbDDWIw",
+            "id": "pJHjpJzpwbnlmqXZegSDT",
             "name": "Name",
             "type": "string",
             "description": "",
@@ -188,7 +186,7 @@
             "mask": false
           },
           {
-            "id": "tGbIPUTwYlRjRQZqVSbYj",
+            "id": "YSOTSXIjjRmEdPcCKZHgg",
             "name": "id",
             "type": "integer",
             "description": "",
@@ -196,7 +194,7 @@
             "mask": false
           },
           {
-            "id": "xiFeDDdNWFHGxdkDJRreK",
+            "id": "ijOaCTucvdyfmUlwPojgt",
             "name": "age",
             "type": "number",
             "description": "",
@@ -204,7 +202,7 @@
             "mask": false
           },
           {
-            "id": "ruzcJhcgzNCqOFQuPROYk",
+            "id": "gYKqzFEPgHoTMrdtWDXsI",
             "name": "male",
             "type": "boolean",
             "description": "",
