@@ -1,10 +1,10 @@
 {
   "id": "pfkkgiSypIdmOraJOfTOb",
   "name": "New Workflow 1",
-  "workflowName": "New Workflow",
+  "workflowName": "New Workflow 1",
   "itemType": "workflow",
   "appId": "IJupPoWqFrOMBDwRTnpLo",
-  "folderId": "NVFyLCoEjEMbyYcUjayLj",
+  "folderId": "neYkpvDRSAMhJYXOoNeyN",
   "type": "ORCHESTRATION",
   "version": "0.0.1",
   "steps": [
@@ -12,7 +12,7 @@
       "id": "GuaDMOFywQUJyBucOvmhF",
       "stepName": "End",
       "stepType": "END",
-      "icon": "StopActivityIcon",
+      "icon": "",
       "indicator": "",
       "description": "",
       "deletable": true,
@@ -20,31 +20,52 @@
         "activityType": "END",
         "activityName": "End",
         "activityGroup": "Common",
-        "name": "End"
+        "name": "End",
+        "sourceSchemas": [
+          "kUwpulPZZrZqCbGptYHtK"
+        ]
       }
     },
     {
-      "id": "XJiQOQSCuCAAcMjFvFLhb",
-      "stepName": "Select Trigger",
+      "id": "kUwpulPZZrZqCbGptYHtK",
+      "stepName": "RESTService",
       "stepType": "EVENT_SOURCE",
-      "icon": "SelectTriggerIcon",
+      "icon": "",
       "indicator": "",
-      "description": "",
+      "description": "This resource is for HTTP Server",
       "deletable": true,
       "config": {
+        "name": "RESTService",
+        "description": "",
+        "path": "",
+        "method": [
+          "GET"
+        ],
+        "allowedMediaTypes": [
+          "application/json"
+        ],
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "output": "",
         "activityType": "EVENT_SOURCE",
-        "activityName": "Start",
-        "activityGroup": "Common"
-      }
+        "activityGroup": "HTTP",
+        "activityName": "RESTService",
+        "activityStatus": "APPROVED",
+        "showHttpFormSelectionPanel": true,
+        "config.name": "RESTService",
+        "sourceSchemas": []
+      },
+      "activityCluster": null
     }
   ],
   "transitions": [
     {
       "id": "initialEdge",
-      "from": "XJiQOQSCuCAAcMjFvFLhb",
+      "from": "kUwpulPZZrZqCbGptYHtK",
       "to": "GuaDMOFywQUJyBucOvmhF",
       "handleMap": {
-        "source": "XJiQOQSCuCAAcMjFvFLhb_1",
+        "source": "kUwpulPZZrZqCbGptYHtK_1",
         "target": "GuaDMOFywQUJyBucOvmhF_1"
       },
       "name": "",
@@ -55,29 +76,31 @@
     }
   ],
   "diagram": {
-    "XJiQOQSCuCAAcMjFvFLhb": {
-      "x": 16,
-      "y": 48,
-      "handles": [
-        {
-          "type": "source",
-          "position": "right"
-        }
-      ],
-      "sourcePosition": "right",
-      "targetPosition": null
-    },
     "GuaDMOFywQUJyBucOvmhF": {
       "x": 512,
       "y": 48,
       "handles": [
         {
           "type": "source",
-          "position": "left"
+          "position": "left",
+          "id": "GuaDMOFywQUJyBucOvmhF_1"
         }
       ],
       "sourcePosition": null,
       "targetPosition": "left"
+    },
+    "kUwpulPZZrZqCbGptYHtK": {
+      "x": 16,
+      "y": 48,
+      "handles": [
+        {
+          "type": "source",
+          "position": "right",
+          "id": "kUwpulPZZrZqCbGptYHtK_1"
+        }
+      ],
+      "sourcePosition": "right",
+      "targetPosition": null
     }
   },
   "mappings": {},
